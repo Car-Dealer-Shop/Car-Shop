@@ -24,3 +24,14 @@
 &nbsp;
 
 > `To display a variety of cars available for purchase so that customers do not have to waste time and money looking for a car. Additionally, if a customer wants to rent a car, S/he can find a variety of options.`
+
+&nbsp;
+
+## <span style="color:#a34a28">**Wireframe**</span>
+&nbsp;
+
+![home page](./img/wireframe-1.png)
+
+&nbsp;
+
+![home page](./img/wireframe-2.png)
