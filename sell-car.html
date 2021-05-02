@@ -36,7 +36,7 @@
     <main>
         <fieldset>
             <legend> Car Details</legend>
-                <form>
+                <form id='carForm'>
                     <label for="manu">Manufacture</label>
                     <input type="text" id="manu" required>
                     <label for="model">Model</label>
@@ -45,9 +45,10 @@
                     <input type="number" id="modelY" required>
                     <label for="mile">Mileage</label>
                     <input type="number" id="mile" required>
-                    <textarea rows="4" cols="50" name="comment" required></textarea>
-                    <input type="submit" value="Submit">
-                    <!-- <button type="button"> Submit</button> -->
+                    <label for="desc"></label>
+                    <textarea id='desc' rows="4" cols="50" name="comment" required></textarea>
+                    <!-- <input type="submit" value="Submit"> -->
+                    <button class="submit"> Submit</button>
 
                 </form>
             

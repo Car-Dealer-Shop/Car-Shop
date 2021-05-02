@@ -73,16 +73,16 @@ main section input{
     margin: 15px;
 }
 
-main section #firstrow{
+/* main section #firstrow{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
     margin-bottom: 10px;
    
-}
+} */
 
-main section #secondrow{
+main #availableCar{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -90,7 +90,7 @@ main section #secondrow{
    
 }
 
-main section .flip-card img {
+main .flip-card img {
 
     width: 300px;
     height: 300px;
@@ -98,7 +98,7 @@ main section .flip-card img {
     
 }
 
-main section button{
+main button{
     width: 3%;
     background: #2196F3;
     color: white;
@@ -107,7 +107,7 @@ main section button{
     cursor: pointer;
 }
 
-main section button:hover {
+main button:hover {
     background: #0b7dda;
 }
 
