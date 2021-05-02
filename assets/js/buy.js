@@ -3,12 +3,11 @@ let car;
 function loadCar(){
   const carItems = JSON.parse(localStorage.getItem('car')) || [];
   car = new Car(carItems);
-//   console.log(car.cars);
 }
-// loadCar();
-// console.log(car.cars);
+
 function showCar(){
   //Create the flip card div
+
   for (let i = 0; i < car.cars.length; i++) {
     let flipCard = document.createElement('div');
     flipCard.setAttribute('class', 'flip-card');
@@ -26,7 +25,7 @@ function showCar(){
 
     let imgCar = document.createElement('img');
     flipCardFront.appendChild(imgCar);
-    imgCar.textContent = 'X';
+    imgCar.src = car.cars[i].myImg;
 
     let titleSpan = document.createElement('span');
     titleSpan.setAttribute('class', 'title');
@@ -35,12 +34,12 @@ function showCar(){
 
     let priceSpan = document.createElement('span');
     titleSpan.setAttribute('class', 'titlenum');
-    flipCardFront.appendChild(priceSpan);
-    priceSpan.textContent = '2000';
+    titleSpan.appendChild(priceSpan);
+    priceSpan.textContent = car.cars[i].price;
 
     //Create the flip card back div
     let flipCardBack = document.createElement('div');
-    flipCardBack.setAttribute('class', 'flip-card-front');
+    flipCardBack.setAttribute('class', 'flip-card-back');
     flipCardInner.appendChild(flipCardBack);
 
     let nameCar = document.createElement('h1');
@@ -57,7 +56,7 @@ function showCar(){
 
     let mileCar = document.createElement('p');
     flipCardBack.appendChild(mileCar);
-    mileCar.textContent =car.cars[i].mileAge; // mike car
+    mileCar.textContent =car.cars[i].mileAge; // mile car
 
     let discCar = document.createElement('p');
     flipCardBack.appendChild(discCar);

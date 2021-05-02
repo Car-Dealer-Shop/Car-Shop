@@ -1,14 +1,33 @@
-let myIndex = 0;
-carousel();
+const Car = function(cars){
+  this.cars = cars;
+};
 
-function carousel() {
-  let i;
-  let x = document.getElementsByClassName('slides');
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = 'none';
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1;}
-  x[myIndex-1].style.display = 'block';
-  setTimeout(carousel, 2500);
-}
+
+//To add new Car
+Car.prototype.addCar = function(manufacture, model, modelYear, mileAge, price, description, myImg) {
+  // let count = 0;
+  let newCar = new CarItem(manufacture, model, modelYear, mileAge,price, description, myImg);
+  this.cars.push(newCar);
+};
+
+// To save Data in locall storage
+Car.prototype.saveToLocalStorage = function(){
+  localStorage.setItem('car', JSON.stringify(this.cars));
+};
+
+// remove card from the localStorage
+Car.prototype.removeItem = function (item) {
+  this.cars.splice(item, 1);
+};
+const CarItem = function(manufacture, model, modelYear, mileAge, price, description, myImg){
+  this.manufacture = manufacture;
+  this.model = model;
+  this.modelYear = modelYear;
+  this.mileAge = mileAge;
+  this.price = price;
+  this.description = description;
+  this.myImg = myImg;
+  CarItem.allCar.push(this);
+};
+
+CarItem.allCar = [];

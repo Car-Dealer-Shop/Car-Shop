@@ -1,0 +1,260 @@
+html {
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr 130px;
+    background-color: #eeeeee
+    
+}
+.card{
+    display: grid;
+   
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 30px;
+}
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: crimson;
+    position: relative;
+    bottom: 10px;
+}
+header img {
+    width: 300px;
+    height: 100px;
+}
+.logo {
+    width: 100%;
+    position: relative;
+    left: -10px;
+}
+
+.nav-bar {
+    font-size: large;
+    margin: 30px 0 0 280px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #fff ;
+    margin: 0px 10px;
+    position: relative;
+    top: 10px;
+}
+.nav-bar a:hover {
+    box-shadow: 0 0 3px #ffe205, 0 0 7px #ffe205, 
+        0 0 50px #edd205; 
+}
+
+
+main{
+    margin: auto;
+}
+
+main section input{
+
+    margin: 15px;
+}
+main .available-rent-car{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+
+}
+main .car-rent img{
+    width: 300px;
+    height: 300px;
+}
+main .available-rent-car {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* max-width: 300px; */
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+
+}
+
+main .available-rent-car button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+/* .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+} */
+
+/* .card button:hover {
+  opacity: 0.7;
+} */
+/* main section .card {
+    display: grid;
+    grid-template-columns: 1fr ;
+
+} */
+
+
+
+
+
+
+
+
+
+
+/* 
+main section .card{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    margin-bottom: 10px;
+   
+} */
+/* 
+main section .card{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    */
+/* } */
+
+main section .card img {
+
+    width: 300px;
+    height: 300px;
+    
+    
+}
+
+main section button{
+    width: 3%;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+main section button:hover {
+    opacity: 0.7;
+    
+}
+/* 
+.title{
+
+  position: relative;
+    right: -7.5px;
+    top: 0;
+    width: 180px;
+    height: 40px;
+    border: none;
+    display: block;
+    background: crimson;
+   
+    transform: scaleX(1) scaleY(1) scaleZ(1) skewX(
+-20deg
+);
+    
+    transform-origin: 50% 50%;
+    
+    
+}
+
+.titlenum{
+
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 180px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    transform: none;
+    z-index: 10;
+} */
+
+
+}
+  
+/*******************Footer*****************************/
+
+
+footer section:nth-child(1) a{
+
+position: relative;
+left: 670px;
+bottom: -20px;
+margin: 0px 20px
+    
+}
+footer section:nth-child(2) p{
+    position: relative;
+    left: 620px;
+    bottom: -30px;
+    margin: 0px 7px;
+    color: white;
+
+         
+}
+
+footer section:nth-child(3) a{
+    position: relative;
+    left: 625px;
+    bottom: -40px; 
+    margin: 0px 7px;
+    color: white;
+         
+}
+
+footer{
+    position: relative;
+    background-color:crimson ;
+    position: relative;
+    left:-10px;
+    right: -10px;
+    bottom: -10px;
+}
+
+footer a{
+
+    text-decoration: none;
+}
+
+
+  
