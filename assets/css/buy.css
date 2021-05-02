@@ -1,0 +1,378 @@
+
+html {
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr 130px;
+    background: #f1f1f1;
+    
+}
+header {
+  background: #142850;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 11;
+}
+  header img {
+    width: 300px;
+    height: 100px;
+  }
+  .logo {
+    width: 100%;
+    position: relative;
+    left: -10px;
+  }
+
+header nav {
+  margin-right: 40px;
+  text-align: right;
+}
+
+
+header nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 550ms;
+}
+
+header nav a:hover {
+  background: #fff;
+  color: #2f5d62;
+  position: relative;
+}
+
+header nav a:hover::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: #ffb037;
+}
+
+  
+
+
+/***************Main******************/
+main{
+    margin: auto;
+}
+
+main section input{
+
+    margin: 15px;
+}
+
+/* main section #firstrow{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    margin-bottom: 10px;
+   
+} */
+<<<<<<< HEAD:css/buy.css
+
+main button{
+    width: 3%;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+main button:hover {
+    background: #0b7dda;
+}
+=======
+
+>>>>>>> 256fce469689d6899be67ecc69df024f6aff358e:assets/css/buy.css
+main #availableCar{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+   
+}
+<<<<<<< HEAD:css/buy.css
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  main .flip-card img {
+=======
+
+main .flip-card img {
+>>>>>>> 256fce469689d6899be67ecc69df024f6aff358e:assets/css/buy.css
+
+    width: 300px;
+    height: 300px;
+    
+    
+}
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+<<<<<<< HEAD:css/buy.css
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+  }
+=======
+main button{
+    width: 3%;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+main button:hover {
+    background: #0b7dda;
+}
+>>>>>>> 256fce469689d6899be67ecc69df024f6aff358e:assets/css/buy.css
+
+
+.flip-card-front .title{
+    position: absolute;
+    right: -7.5px;
+    top: 0;
+    width: 180px;
+    height: 40px;
+    border: none;
+    display: block;
+    background: #325288;
+   
+    transform: scaleX(1) scaleY(1) scaleZ(1) skewX(
+-20deg
+);
+    
+    transform-origin: 50% 50%;
+    
+    
+}
+
+.flip-card-front .titlenum{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 180px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    transform: none;
+    z-index: 10;
+}
+
+
+main #backimg{
+position: relative;
+top: -15px;
+width: 50px;
+height: 50px;
+
+}
+
+main .call{
+    position: relative;
+    top: -35px;
+    left:-10px
+
+}
+
+main #call{
+    position: relative;
+top: -75px;
+left: 120px;
+
+width: 30px;
+height: 30px;
+
+}
+
+/* slide animation */
+
+/* .slideshow {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.slideshow-item {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycleImages 30s infinite;
+}
+
+.slideshow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 30s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+    animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+    animation-delay: 5s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+    animation-delay: 10s;
+}
+
+
+@keyframes cycleImages {
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: .8;
+    }
+}
+
+@keyframes zoom {
+    100% {
+        transform: scale(1.2);
+    }
+} */
+
+
+
+  
+/*******************Footer*****************************/
+
+
+/* footer section:nth-child(1) a{
+
+position: relative;
+left: 670px;
+bottom: -20px;
+margin: 0px 20px
+    
+}
+footer section:nth-child(2) p{
+    position: relative;
+    left: 620px;
+    bottom: -30px;
+    margin: 0px 7px;
+    color: white;
+
+         
+}
+
+footer section:nth-child(3) a{
+    position: relative;
+    left: 625px;
+    bottom: -40px; 
+    margin: 0px 7px;
+    color: white;
+         
+}
+
+footer{
+    position: relative;
+    background-color:crimson ;
+    position: relative;
+    left:-10px;
+    right: -10px;
+    bottom: -10px;
+}
+
+footer a{
+
+    text-decoration: none;
+} */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  /* margin-top: 90px; */
+  padding-left: 120px;
+}
+
+footer {
+  background-color: #005082;
+  color: #fea82f;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.social-icon {
+  width: 100%;
+  margin: 10px;
+  /* padding: auto; */
+}
+.social-icon a {
+  color: #fea82f;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  align-items: center;
+}
+.terms {
+  width: 100%;
+  margin: 10px;
+}
+.terms a {
+  color: #fea82f;
+  display: inline;
+  text-decoration: none;
+  padding: 5px;
+}
+
+
+
+  

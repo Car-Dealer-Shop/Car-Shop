@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- add icon to title -->
+     <link rel = "icon" href = "assets/img/logo2.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Sell Car</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html"> <img src="assets/img/logo2.PNG" alt=""></a>
+
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <a href="buy-car.html">Buy Car</a>
+                <a href="sell-car.html">Sell Car</a>
+                <a href="rent-car.html"> Rent Car</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+
+
+        </div>
+    </header>
+    <main>
+        <fieldset>
+            <legend> Car Details</legend>
+                <form id='carForm'>
+                    <label for="manu">Manufacture</label>
+                    <input type="text" id="manu" required>
+                    <label for="model">Model</label>
+                    <input type="text" id="model" required>
+                    <label for="modelY">Model Year</label>
+                    <input type="number" id="modelY" required>
+                    <label for="mile">Mileage</label>
+                    <input type="number" id="mile" required>
+                    <label for="desc"></label>
+                    <textarea id='desc' rows="4" cols="50" name="comment" required></textarea>
+                    <!-- <input type="submit" value="Submit"> -->
+                    <button class="submit"> Submit</button>
+
+                </form>
+            
+        </fieldset>
+    </main>
+    <footer>
+        <section class="social-icon">
+
+           <!-- Add font awesome icons -->
+           <a target="_blank" href="https://web.facebook.com/alkiswani" class="fa fa-facebook"></a>
+           <a target="_blank" href="https://twitter.com/alkiswani_mtk" class="fa fa-twitter"></a>
+           <a target="_blank" href="https://www.instagram.com/alkiswani_moe/" class="fa fa-instagram"></a>
+        </section>
+
+        <section class="copy">
+            <p>
+                Elite Cars &copy; 2021. All Rights Reserved
+            </p>
+        </section>
+
+
+        <section class="terms">
+
+            <a href="terms-condition.html">Terms & Conditions</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </section>
+    </footer>
+</body>
+</html>
