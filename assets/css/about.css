@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  background: #f1f1f1;
+}
+
+img {
+  width: 100%;
+}
+
+/* h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 100px;
+  left: 50%;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #364547;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px minmax(calc(100vh - 220px), 1fr) 80px;
+  gap: 60px;
+}
+
+header {
+  background: #142850;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 11;
+}
+  header img {
+    width: 300px;
+    height: 100px;
+  }
+  .logo {
+    width: 100%;
+    position: relative;
+    left: -10px;
+  }
+
+header nav {
+  margin-right: 40px;
+  text-align: right;
+}
+
+
+header nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 550ms;
+}
+
+header nav a:hover {
+  background: #fff;
+  color: #2f5d62;
+  position: relative;
+}
+
+header nav a:hover::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: #ffb037;
+}
+
+main {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+
+}
+
+.parallax-section {
+  background: url(../img/sam-moqadam-0_dtyvwWJhA-unsplash.jpg);
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.parallax-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* z-index: 9; */
+}
+
+.parallax-section h2,
+.parallax-section p {
+  z-index: 12;
+  color: #fff;
+}
+
+.parallax-section h2 {
+  font-size: 52px;
+  font-weight: 700;
+  margin: 20px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.parallax-section h2::after {
+  width: 65px;
+  height: 5px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #ffb037;
+
+}
+
+.team-member {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 40px;
+  width: 1100px;
+  margin: -100px auto 0;
+  z-index: 14;
+  position: relative;
+}
+
+.team-member article {
+  background: #fff;
+  padding-bottom: 40px;
+  color: #222;
+  flex: 0 0 calc(30% - 40px);
+  border-radius: 5px 5px 0 0 ;
+  text-align: center;
+  transition: all 750ms;
+  overflow: hidden;
+
+}
+
+.team-member article:hover {
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.team-member article:hover img {
+  filter: none;
+}
+
+.team-member article img {
+  object-fit: cover;
+  border-radius: 5px 5px 0 0 ;
+  transition: all 350ms;
+  filter: grayscale(100%);
+
+}
+
+.team-member article h3 {
+  margin: 30px 0 10px;
+  font-weight: 700;
+  transition: all 350ms;
+
+}
+
+.team-member article p {
+  margin: 0 0 20px 0;
+
+}
+
+
+.team-member article i {
+  color: #222;
+  transition: all 350ms;
+}
+
+.team-member article a:hover i {
+  color: #fea82f;
+}
+
+.team-member article:hover h3 {
+  color: #ffb037;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  /* margin-top: 90px; */
+  padding-left: 120px;
+}
+
+footer {
+  background-color: #005082;
+  color: #fea82f;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.social-icon {
+  width: 100%;
+  margin: 10px;
+  /* padding: auto; */
+}
+.social-icon a {
+  color: #fea82f;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  align-items: center;
+}
+.terms {
+  width: 100%;
+  margin: 10px;
+}
+.terms a {
+  color: #fea82f;
+  display: inline;
+  text-decoration: none;
+  padding: 5px;
+}
