@@ -1,24 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-
 body {
   width: 100%;
   margin: auto;
   font-family: 'Roboto', sans-serif;
 }
-
 .container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
   gap: 20px;
 }
-
 header {
   background: crimson;
   grid-row: 1 / 2;
@@ -39,12 +35,9 @@ header {
     position: relative;
     left: -10px;
   }
-
 header nav {
   text-align: right;
 }
-
-
 header nav a {
   text-transform: uppercase;
   text-decoration: none;
@@ -52,13 +45,11 @@ header nav a {
   padding: 10px 20px;
   transition: all 550ms;
 }
-
 header nav a:hover {
   background: #fff;
-  color: #2f5d62;
+  color: #2F5D62;
   position: relative;
 }
-
 header nav a:hover::after {
   content: '';
   width: 100%;
@@ -66,7 +57,7 @@ header nav a:hover::after {
   left: 0;
   bottom: 0;
   position: absolute;
-  background: #ffb037;
+  background: #FFB037;
 }
 header {
   background: crimson;
@@ -88,12 +79,9 @@ header {
     position: relative;
     left: -10px;
   }
-
 header nav {
   text-align: right;
 }
-
-
 header nav a {
   text-transform: uppercase;
   text-decoration: none;
@@ -101,13 +89,11 @@ header nav a {
   padding: 10px 20px;
   transition: all 550ms;
 }
-
 header nav a:hover {
   background: #fff;
-  color: #2f5d62;
+  color: #2F5D62;
   position: relative;
 }
-
 header nav a:hover::after {
   content: '';
   width: 100%;
@@ -115,22 +101,18 @@ header nav a:hover::after {
   left: 0;
   bottom: 0;
   position: absolute;
-  background: #ffb037;
+  background: #FFB037;
 }
-
-
 main {
   background:#eeebdd;
   display: grid;
   gap: 20px;
   padding: 50px;
 }
-
 main h2 {
   font-size: 32px;
   font-weight: 700;
 }
-
 main > section:nth-of-type(1) {
   background: #fff;
   padding: 20px;
@@ -138,7 +120,6 @@ main > section:nth-of-type(1) {
   grid-template-columns: repeat(2, 1fr);
   line-height: 2;
 }
-
 main > section:nth-of-type(1) h3 {
   font-size: 22px;
   font-weight: 700;
@@ -147,37 +128,31 @@ main > section:nth-of-type(1) h3 {
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-
 /* main > section:nth-of-type(2) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 } */
-
 main > section:nth-of-type(2) article:nth-of-type(1) {
   grid-column: span 2;
 }
-
 main > section:nth-of-type(2) article:nth-of-type(1) form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 10px;
 }
-
 main > section:nth-of-type(2) article:nth-of-type(1) input {
   height: 50px;
   padding-left: 10px;
   text-transform: capitalize;
   border: 1px solid #ccc;
 }
-
 main > section:nth-of-type(2) article:nth-of-type(1) textarea {
   grid-column: span 2;
   border: 1px solid #ccc;
   text-transform: capitalize;
   padding: 10px;
 }
-
 main > section:nth-of-type(2) article:nth-of-type(1) button {
   grid-column: 2 / 3;
   height: 40px;
@@ -188,25 +163,18 @@ main > section:nth-of-type(2) article:nth-of-type(1) button {
   transition: all 500ms;
   cursor: pointer;
 }
-
 main > section:nth-of-type(2) article:nth-of-type(1) button:hover {
   background: rgba(47,93,98,1);
   color: #fff;
 }
-
 main > section:nth-of-type(2) article:nth-of-type(2) {
   overflow: hidden;
   grid-column: span 1;
   object-fit: cover;
 }
-
 main > section:nth-of-type(2) article:nth-of-type(2) {
   object-fit: cover;
-
 }
-
-
-
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -214,10 +182,9 @@ footer {
   /* margin-top: 90px; */
   padding-left: 120px;
 }
-
 footer {
   background-color: #536162;
-  color: #fea82f;
+  color: #FEA82F;
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
@@ -228,7 +195,7 @@ footer {
   /* padding: auto; */
 }
 .social-icon a {
-  color: #fea82f;
+  color: #FEA82F;
   display: inline-block;
   text-decoration: none;
   padding: 5px;
@@ -239,7 +206,7 @@ footer {
   margin: 10px;
 }
 .terms a {
-  color: #fea82f;
+  color: #FEA82F;
   display: inline;
   text-decoration: none;
   padding: 5px;

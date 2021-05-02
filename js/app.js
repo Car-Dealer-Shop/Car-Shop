@@ -15,13 +15,14 @@ Car.prototype.saveToLocalStorage = function(){
   localStorage.setItem('car', JSON.stringify(this.cars));
 };
 
-const CarItem = function(manufacture, model, modelYear, mileAge, description){
+const CarItem = function(manufacture, model, modelYear, mileAge, price, description, myImg){
   this.manufacture = manufacture;
   this.model = model;
   this.modelYear = modelYear;
   this.mileAge = mileAge;
+  this.price = price;
   this.description = description;
-
+  this.myImg = myImg;
   CarItem.allCar.push(this);
 };
 
