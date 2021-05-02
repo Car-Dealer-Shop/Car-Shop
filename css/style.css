@@ -71,7 +71,7 @@ main{
 }
 
 .slide-img {
-   width: 100vw;
+   width: 3600px;
     margin: 0 0 0 -2400px;
     position: relative;
     -webkit-animation-name: slide_animation;
@@ -245,20 +245,44 @@ font-size: 20px;
 }
 
 .buttonOne{
-   position: relative;
-   left: 520px;
-   background-color: crimson;
-   border-radius: 8px;
-   height: 25px;
-   transition-duration: 0.4s
+    position: relative;
+    left: 450px;
+    border: 1px solid green;
+	transform: skewX(-10deg);
+	height: 50px;
+	width: 200px;
+	border-radius: 20px 5px 20px 0px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .3s ease;
+	font: 15px sans-serif;
+	font-weight: 300;
+	text-shadow: 0 0 20px #fff;
+	text-transform: uppercase;
+	
 }
 .buttonTwo{
     position: relative;
-   left: 650px;
-    background-color: crimson;
-    border-radius: 8px;
-    height: 27px;
-    transition-duration: 0.4s
+    left: 850px;
+    bottom: 50px;
+    border: 1px solid green;
+	transform: skewX(-10deg);
+	height: 50px;
+	width: 200px;
+	border-radius: 20px 5px 20px 0px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .3s ease;
+	font: 15px sans-serif;
+	font-weight: 300;
+	text-shadow: 0 0 20px #fff;
+	text-transform: uppercase; 
+	
+    
  }
 
  .buttonOne:hover{
