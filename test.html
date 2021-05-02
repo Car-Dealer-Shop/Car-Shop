@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- <style>
         .img-preview {
             width: 900px;
             min-height: 800px;
@@ -16,36 +16,47 @@
             display: none;
             width: 100%;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <input type="file" name="inpFile" id="inpFile">
+    <!-- <input type="file" name="inpFile" id="inpFile">
     <div class="img-preview" id="imgPreview">
         <img src="" alt="img preview" class="img-preview__img">
         <span class="img-prv__def-text">
             image preview 
         </span>
+    </div> -->
+    <div>
+        <input type="url" id="image-input">
+        <button id="b">Change Image</button>
+        <br>
+        <img src="" id="image">
     </div>
     <script>
-        const inpFile = document.getElementById('inpFile');
-        const preCont = document.getElementById('imgPreview');
-        const preImg = preCont.querySelector('.img-preview__img');
-        const preDefualtText =  preCont.querySelector('.img-prv__def-text');
+        document.getElementById("b").addEventListener("click", e => {
+                let imageInput = document.getElementById("image-input");
+                let image = document.getElementById("image");
+                if (imageInput.value) image.src = imageInput.value;
+            });
+        // const inpFile = document.getElementById('inpFile');
+        // const preCont = document.getElementById('imgPreview');
+        // const preImg = preCont.querySelector('.img-preview__img');
+        // const preDefualtText =  preCont.querySelector('.img-prv__def-text');
 
-        inpFile.addEventListener('change', function () {
-            const file = this.files[0];
-            if (file) {
-                const reader = new FileReader();
+        // inpFile.addEventListener('change', function () {
+        //     const file = this.files[0];
+        //     if (file) {
+        //         const reader = new FileReader();
 
-                preDefualtText.style.display = 'none';
-                preDefualtText.style.display = 'none';
-                reader.addEventListener('load', function () {
-                    console.log(this);
-                    preImg.setAttribute('src', this.result)
-                });
-                reader.readAsDataURL(file);
-            }
-        });
+        //         preDefualtText.style.display = 'none';
+        //         preDefualtText.style.display = 'none';
+        //         reader.addEventListener('load', function () {
+        //             console.log(this);
+        //             preImg.setAttribute('src', this.result)
+        //         });
+        //         reader.readAsDataURL(file);
+        //     }
+        // });
     </script>
 </body>
 </html>

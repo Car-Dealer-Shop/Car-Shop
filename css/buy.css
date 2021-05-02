@@ -136,7 +136,7 @@ main #availableCar{
   }
 
 
-.title{
+.flip-card-front .title{
     position: absolute;
     right: -7.5px;
     top: 0;
@@ -155,7 +155,7 @@ main #availableCar{
     
 }
 
-.titlenum{
+.flip-card-front .titlenum{
 
     position: absolute;
     right: 0;

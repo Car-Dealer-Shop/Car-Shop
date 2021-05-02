@@ -4,9 +4,9 @@ const Car = function(cars){
 
 
 //To add new Car
-Car.prototype.addCar = function(manufacture, model, modelYear, mileAge, description) {
+Car.prototype.addCar = function(manufacture, model, modelYear, mileAge, price, description, myImg) {
   // let count = 0;
-  let newCar = new CarItem(manufacture, model, modelYear, mileAge, description);
+  let newCar = new CarItem(manufacture, model, modelYear, mileAge,price, description, myImg);
   this.cars.push(newCar);
 };
 
@@ -15,6 +15,10 @@ Car.prototype.saveToLocalStorage = function(){
   localStorage.setItem('car', JSON.stringify(this.cars));
 };
 
+// remove card from the localStorage
+Car.prototype.removeItem = function (item) {
+  this.cars.splice(item, 1);
+};
 const CarItem = function(manufacture, model, modelYear, mileAge, price, description, myImg){
   this.manufacture = manufacture;
   this.model = model;

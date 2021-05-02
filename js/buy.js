@@ -1,30 +1,10 @@
 const sectionE = document.getElementById('availableCar');
 let car;
-let arr = [];
 function loadCar(){
   const carItems = JSON.parse(localStorage.getItem('car')) || [];
   car = new Car(carItems);
-//   console.log(car.cars);
 }
-// loadCar();
-// console.log(car.cars);
 
-// function readFile(){
-//   const imgFile = document.getElementById('myImg');
-//   imgFile.addEventListener('change', function() {
-//     const file = this.files[0];
-//     if (file) {
-//       const reader = new FileReader();
-
-//       reader.addEventListener('load', function(){
-//         arr.push(this.result);
-//       });
-//       reader.readAsDataURL(file);
-//     }
-//   });
-// }
-// readFile();
-// console.log(arr);
 function showCar(){
   //Create the flip card div
 
@@ -43,9 +23,9 @@ function showCar(){
     flipCardFront.setAttribute('class', 'flip-card-front');
     flipCardInner.appendChild(flipCardFront);
 
-    // let imgCar = document.createElement('img');
-    // flipCardFront.appendChild(imgCar);
-    // imgCar.textContent = car.cars[i].myImg;
+    let imgCar = document.createElement('img');
+    flipCardFront.appendChild(imgCar);
+    imgCar.src = car.cars[i].myImg;
 
     let titleSpan = document.createElement('span');
     titleSpan.setAttribute('class', 'title');
@@ -89,7 +69,6 @@ function showCar(){
 
 function renderWeb(){
   loadCar();
-  //   showCarFront();
   showCar();
 }
 renderWeb();
