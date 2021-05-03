@@ -5,6 +5,9 @@
 *::before {
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
   width: 100%;
@@ -31,7 +34,7 @@ img {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px minmax(calc(100vh - 220px), 1fr) 80px;
+  grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
   gap: 60px;
 }
 

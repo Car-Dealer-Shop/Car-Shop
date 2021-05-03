@@ -8,6 +8,7 @@ body {
   width: 100%;
   margin: auto;
   font-family: 'Roboto', sans-serif;
+  background-color: #e1e1e1;
 }
 .container {
   display: grid;
@@ -115,7 +116,7 @@ header nav a:hover::after {
     background: #ffb037;
 }
 main {
-  background:#eeebdd;
+  background:#e1e1e1;
   display: grid;
   gap: 20px;
   padding: 50px;
@@ -194,7 +195,7 @@ footer {
   padding-left: 120px;
 }
 footer {
-  background-color: #536162;
+  background-color: #005082;
   color: #FEA82F;
   align-items: center;
   justify-content: center;
@@ -221,4 +222,17 @@ footer {
   display: inline;
   text-decoration: none;
   padding: 5px;
+}
+
+#subButton{
+
+  background: #005082;
+    color: #fff;
+}
+
+
+#subButton:hover{
+
+  background: rgba(47,93,98,1);
+  color: #fff;
 }
