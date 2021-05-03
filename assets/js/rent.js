@@ -74,8 +74,11 @@ function removeItemFromCart(event) {
     car.saveToLocalStorageRentCar();
     // Redraw the cart.
     // renderCart();
+    location.reload();
+
   }
 }
 
 sectionE.addEventListener('click', removeItemFromCart);
 renderWeb();
+
