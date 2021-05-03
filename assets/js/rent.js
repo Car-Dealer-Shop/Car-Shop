@@ -2,7 +2,7 @@ const sectionE = document.getElementById('availableRentCar');
 let car;
 
 function loadCar(){
-  const carItems = JSON.parse(localStorage.getItem('car')) || [];
+  const carItems = JSON.parse(localStorage.getItem('rent')) || [];
   car = new Car(carItems);
 }
 
@@ -71,7 +71,7 @@ function removeItemFromCart(event) {
     // Remove that item from the cart, based on the ID we set when we created the button.
     car.removeItem(parseInt(event.target.id));
     // Save the cart back to local storage.
-    car.saveToLocalStorage();
+    car.saveToLocalStorageRentCar();
     // Redraw the cart.
     // renderCart();
   }
