@@ -73,6 +73,14 @@ main section input{
     margin: 15px;
 }
 
+#availableCar{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+
+}
+
 /* main section #firstrow{
 
     display: grid;
@@ -81,7 +89,6 @@ main section input{
     margin-bottom: 10px;
    
 } */
-<<<<<<< HEAD:css/buy.css
 
 main button{
     width: 3%;
@@ -95,9 +102,6 @@ main button{
 main button:hover {
     background: #0b7dda;
 }
-=======
-
->>>>>>> 256fce469689d6899be67ecc69df024f6aff358e:assets/css/buy.css
 main #availableCar{
 
     display: grid;
@@ -105,7 +109,6 @@ main #availableCar{
     gap: 100px;
    
 }
-<<<<<<< HEAD:css/buy.css
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -115,13 +118,9 @@ main #availableCar{
   }
   
   main .flip-card img {
-=======
 
-main .flip-card img {
->>>>>>> 256fce469689d6899be67ecc69df024f6aff358e:assets/css/buy.css
-
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     
     
 }
@@ -146,7 +145,6 @@ main .flip-card img {
     backface-visibility: hidden;
   }
 
-<<<<<<< HEAD:css/buy.css
   .flip-card-front {
     background-color: #bbb;
     color: black;
@@ -157,20 +155,6 @@ main .flip-card img {
     color: white;
     transform: rotateY(180deg);
   }
-=======
-main button{
-    width: 3%;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    cursor: pointer;
-}
-
-main button:hover {
-    background: #0b7dda;
-}
->>>>>>> 256fce469689d6899be67ecc69df024f6aff358e:assets/css/buy.css
 
 
 .flip-card-front .title{
