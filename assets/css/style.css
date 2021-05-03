@@ -4,7 +4,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
-    background: #f4eee8;
+    background-color:#e1e1e1;
 }
 header {
     background: #142850;
