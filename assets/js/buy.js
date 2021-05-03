@@ -20,7 +20,7 @@ function showCar(){
 
   for (let i = 0; i < car.cars.length; i++) {
     let product = document.createElement('div');
-    product.setAttribute('class', 'product');
+    product.setAttribute('class', `product ${car.cars[i].manufacture}`);
     sectionE.appendChild(product);
     console.log(product);
     let itemCar = document.createElement('div');

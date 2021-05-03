@@ -90,16 +90,23 @@ main{
   background-color: #666;
   color: white;
 }
-.show {
-  display: block;
-}
 
+/* .ss {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+} */
 main #availableCar{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
    
+}
+.product {
+  display: none; /* Hidden by default */
 }
 .flip-card {
     background-color: transparent;
@@ -353,6 +360,8 @@ footer {
   padding: 5px;
 }
 
-
+.show {
+  display: block;
+}
 
   

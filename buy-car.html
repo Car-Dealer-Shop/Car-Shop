@@ -54,7 +54,7 @@
 
 
     <section id="availableCar">
-      <div class="flip-card">
+      <div class="flip-card product hyundai">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
@@ -68,13 +68,10 @@
             <p>Model year <br> 2020 </p>
             <p>mileAge </p>
             <p>Discription</p>
-            <!-- <img src="./img/warranty-period.png" alt="" id= "backimg">
-                    <p class="call">Contact phone :+962790000000</p>
-                    <img src="img/phone.png" alt="" id="call"> -->
           </div>
         </div>
       </div>
-      <div class="flip-card">
+      <div class="flip-card product hyundai">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
@@ -127,12 +124,13 @@
 
       function filterSelection(c) {
         let x, i;
-        x = document.getElementsByClassName('itemCar');
+        x = document.getElementsByClassName('product');
         if (c === 'all') c = '';
         for (i = 0; i < x.length; i++) {
           w3RemoveClass(x[i], 'show');
           if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], 'show');
         }
+        console.log(c);
       }
 
       function w3AddClass(element, name) {
