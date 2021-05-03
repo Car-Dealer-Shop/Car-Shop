@@ -1,5 +1,8 @@
 const sectionE = document.getElementById('availableCar');
+// const filterCar = document.getElementById('myBtnContainer');
 let car;
+let imgCar;
+
 function loadCar(){
   const carItems = JSON.parse(localStorage.getItem('car')) || [];
   car = new Car(carItems);
@@ -8,15 +11,25 @@ function loadCar(){
 function renderWeb(){
   loadCar();
   showCar();
+  // ss();
+  // filterCar();
 }
 
 function showCar(){
   //Create the flip card div
 
   for (let i = 0; i < car.cars.length; i++) {
+    let product = document.createElement('div');
+    product.setAttribute('class', 'product');
+    sectionE.appendChild(product);
+    console.log(product);
+    let itemCar = document.createElement('div');
+    itemCar.setAttribute('class', `'itemCar ${car.cars[i].manufacture}'`);
+    product.appendChild(itemCar);
+
     let flipCard = document.createElement('div');
     flipCard.setAttribute('class', 'flip-card');
-    sectionE.appendChild(flipCard);
+    itemCar.appendChild(flipCard);
 
     //Create the flip card inner div
     let flipCardInner = document.createElement('div');
@@ -28,7 +41,7 @@ function showCar(){
     flipCardFront.setAttribute('class', 'flip-card-front');
     flipCardInner.appendChild(flipCardFront);
 
-    let imgCar = document.createElement('img');
+    imgCar = document.createElement('img');
     flipCardFront.appendChild(imgCar);
     imgCar.src = car.cars[i].myImg;
 
@@ -68,9 +81,13 @@ function showCar(){
     discCar.textContent = car.cars[i].description; // discription
 
   }
-
+  // filterSelection('bmw');
+  // filterSelection('gmc');
+  // filterSelection('mercedes');
+  // filterSelection('hyundai');
 
 }
 
 
+// filterCar.addEventListener('click', filter);
 renderWeb();
