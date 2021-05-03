@@ -5,6 +5,11 @@ function loadCar(){
   car = new Car(carItems);
 }
 
+function renderWeb(){
+  loadCar();
+  showCar();
+}
+
 function showCar(){
   //Create the flip card div
 
@@ -33,8 +38,8 @@ function showCar(){
 
 
     let priceSpan = document.createElement('span');
-    titleSpan.setAttribute('class', 'titlenum');
-    titleSpan.appendChild(priceSpan);
+    priceSpan.setAttribute('class', 'titlenum');
+    flipCardFront.appendChild(priceSpan);
     priceSpan.textContent = car.cars[i].price;
 
     //Create the flip card back div
@@ -67,8 +72,5 @@ function showCar(){
 
 }
 
-function renderWeb(){
-  loadCar();
-  showCar();
-}
+
 renderWeb();
