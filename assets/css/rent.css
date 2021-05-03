@@ -4,7 +4,7 @@ html {
 body {
     width: 100%;
     display: grid;
-    grid-template-rows: 100px 1fr 130px;
+    grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
     background-color: #eeeeee
     
 }
@@ -86,7 +86,7 @@ main .car-rent img{
     height: 300px;
 }
 main .available-rent-car {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     /* max-width: 300px; */
     margin: auto;
     text-align: center;
@@ -221,51 +221,51 @@ main section button:hover {
 } */
 
 
-}
+
   
 /*******************Footer*****************************/
 
 
-footer section:nth-child(1) a{
-
-position: relative;
-left: 670px;
-bottom: -20px;
-margin: 0px 20px
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* margin-top: 90px; */
+    padding-left: 120px;
     
-}
-footer section:nth-child(2) p{
+  }
+  footer {
+    background-color: #005082;
+    color: #FEA82F;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
     position: relative;
-    left: 620px;
-    bottom: -30px;
-    margin: 0px 7px;
-    color: white;
-
-         
-}
-
-footer section:nth-child(3) a{
-    position: relative;
-    left: 625px;
-    bottom: -40px; 
-    margin: 0px 7px;
-    color: white;
-         
-}
-
-footer{
-    position: relative;
-    background-color:crimson ;
-    position: relative;
-    left:-10px;
-    right: -10px;
-    bottom: -10px;
-}
-
-footer a{
-
+    bottom: -38px;
+  }
+  .social-icon {
+    width: 100%;
+    margin: 10px;
+    /* padding: auto; */
+  }
+  .social-icon a {
+    color: #FEA82F;
+    display: inline-block;
     text-decoration: none;
-}
+    padding: 5px;
+    align-items: center;
+  }
+  .terms {
+    width: 100%;
+    margin: 10px;
+  }
+  .terms a {
+    color: #FEA82F;
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
 
 
   

@@ -10,9 +10,13 @@ Car.prototype.addCar = function(manufacture, model, modelYear, mileAge, price, d
   this.cars.push(newCar);
 };
 
-// To save Data in locall storage
-Car.prototype.saveToLocalStorage = function(){
+// To save Data in locall storage buy car
+Car.prototype.saveToLocalStorageBuyCar = function(){
   localStorage.setItem('car', JSON.stringify(this.cars));
+};
+
+Car.prototype.saveToLocalStorageRentCar = function(){
+  localStorage.setItem('rent', JSON.stringify(this.cars));
 };
 
 // remove card from the localStorage

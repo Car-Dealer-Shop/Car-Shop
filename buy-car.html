@@ -34,51 +34,60 @@
   </header>
   <main>
 
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('bmw')"> BMW</button>
+      <button class="btn" onclick="filterSelection('gmc')"> GMC</button>
+      <button class="btn" onclick="filterSelection('mercedes')"> Mercedes</button>
+      <button class="btn" onclick="filterSelection('hyundai')"> Hyundai</button>
+    </div>
 
-    <section>
-      <input type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
-      <button type="submit"><i class="fa fa-search"></i></button>
-      <h1>Explore Available Cars</h1>
-    </section>
+    <!-- <section class="filter-car" id="filterCar">
+      <ul>
+        <li class="list active" data-filter="All">All Car</li>
+        <li class="list" data-filter="bmw">BMW</li>
+        <li class="list" data-filter="gmc">GMC</li>
+        <li class="list" data-filter="mercedes">Mercedes</li>
+        <li class="list" data-filter="hyundai">hyundai</li>
+      </ul>
+    </section> -->
 
 
     <section id="availableCar">
-      <div class="flip-card">
+      <div class="flip-card product hyundai">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
-              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg?crop=0.737xw:0.738xh;0.181xw,0.218xh&resize=640:*">
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Alcazar/8341/1617863717094/front-left-side-47.jpg?tr=w-456">
             <span class="title"></span>
             <span class="titlenum">50,000 JD</span>
           </div>
           <div class="flip-card-back">
-            <h1>manufacture</h1>
-            <p>Model </p>
-            <p>model year <br> 6 </p>
+            <h1>Hyundai</h1>
+            <p>Alcazar </p>
+            <p>Model year <br> 2020 </p>
             <p>mileAge </p>
             <p>Discription</p>
-            <!-- <img src="./img/warranty-period.png" alt="" id= "backimg">
-                    <p class="call">Contact phone :+962790000000</p>
-                    <img src="img/phone.png" alt="" id="call"> -->
           </div>
         </div>
       </div>
-      <div class="flip-card">
+      <div class="flip-card product hyundai">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
-              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg?crop=0.737xw:0.738xh;0.181xw,0.218xh&resize=640:*">
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/Mercedes-Benz-CLA-2020/6730/1547099834993/front-left-side-47.jpg?tr=w-456">
             <span class="title"></span>
             <span class="titlenum">50,000 JD</span>
           </div>
           <div class="flip-card-back">
-            <h1>Car Name</h1>
-            <p>Model <br> 2019</p>
-            <p>Cylinders <br> 6 </p>
-            <p>Warranty <br> Until 25/05/2022 </p>
-            <img src="./assets//img/warranty-period.png" alt="" id="backimg">
+            <h1>Hyundai</h1>
+            <p>Alcazar </p>
+            <p>Model year <br> 2020 </p>
+            <p>mileAge </p>
+            <p>Discription</p>
+            <!-- <img src="./assets//img/warranty-period.png" alt="" id="backimg">
             <p class="call">Contact phone :+962790000000</p>
-            <img src="./assets/img/phone.png" alt="" id="call">
+            <img src="./assets/img/phone.png" alt="" id="call"> -->
           </div>
         </div>
       </div>
@@ -107,9 +116,57 @@
         <a href="privacy-policy.html">Privacy Policy</a>
       </section>
     </footer>
-
+    
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/buy.js"></script>
+    <script>
+      
+      filterSelection('all');
+
+      function filterSelection(c) {
+        let x, i;
+        x = document.getElementsByClassName('product');
+        if (c === 'all') c = '';
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], 'show');
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], 'show');
+        }
+        console.log(c);
+      }
+
+      function w3AddClass(element, name) {
+        let i, arr1, arr2;
+        arr1 = element.className.split(' ');
+        arr2 = name.split(' ');
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) === -1) {element.className += ' ' + arr2[i];}
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        let i, arr1, arr2;
+        arr1 = element.className.split(' ');
+        arr2 = name.split(' ');
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(' ');
+      }
+
+  // Add active class to the current button (highlight it)
+  let btnContainer = document.getElementById('myBtnContainer');
+  let btns = btnContainer.getElementsByClassName('btn');
+  for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function(){
+      let current = document.getElementsByClassName('active');
+      current[0].className = current[0].className.replace(' active', '');
+      this.className += ' active';
+    });
+  }
+
+    </script>
 
 </body>
 

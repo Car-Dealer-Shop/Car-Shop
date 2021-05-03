@@ -5,8 +5,8 @@ html {
 body {
     width: 100%;
     display: grid;
-    grid-template-rows: 100px 1fr 130px;
-    background: #f1f1f1;
+    grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
+    background-color:#e1e1e1;
     
 }
 header {
@@ -19,16 +19,18 @@ header {
   width: 100%;
   /* margin: 0 auto; */
   z-index: 11;
+  position: relative;
+    top: -10px;
 }
   header img {
     width: 300px;
     height: 100px;
   }
-  .logo {
+.logo {
     width: 100%;
     position: relative;
     left: -10px;
-  }
+}
 
 header nav {
   margin-right: 40px;
@@ -66,54 +68,51 @@ header nav a:hover::after {
 /***************Main******************/
 main{
     margin: auto;
+    
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  margin: 20px 0;
 }
 
-main section input{
-
-    margin: 15px;
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
 }
 
-#availableCar{
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 100px;
-
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
 }
 
-/* main section #firstrow{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
-    margin-bottom: 10px;
-   
+/* .ss {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
 } */
-
-main button{
-    width: 3%;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    cursor: pointer;
-}
-
-main button:hover {
-    background: #0b7dda;
-}
 main #availableCar{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
+    gap: 20px;
    
+}
+.product {
+  display: none; /* Hidden by default */
 }
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 300px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #e1e1e1;
     perspective: 1000px;
   }
   
@@ -323,9 +322,13 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  /* margin-top: 90px; */
+  margin-bottom: -10px;
+  margin-left: -10px;
   padding-left: 120px;
+  position: relative;
+  bottom: -20px;
 }
+
 
 footer {
   background-color: #005082;
@@ -357,6 +360,8 @@ footer {
   padding: 5px;
 }
 
-
+.show {
+  display: block;
+}
 
   
