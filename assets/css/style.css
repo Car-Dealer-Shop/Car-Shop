@@ -65,6 +65,7 @@ main{
 }
 main h2{
   font-family: 'Original Surfer', cursive;
+  text-align: center;
   
   
 
@@ -125,6 +126,37 @@ main h2{
     text-indent: 50px;
     line-height: 1.5;
     padding: 20px 170px;
+}
+
+.sellCarPromo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  
+}
+
+.sellCarPromo p {
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(42, 42, 128);
+}
+
+.centp {
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(42, 42, 128);
+}
+
+.sellCarPromo img {
+  width: 75%;
+  -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.sellCarPromo :nth-child(2) {
+  display: grid;
+  grid-template-rows: repeat(2 1fr);
+  gap: 10px;
 }
 .img-service {
     display: grid;
@@ -290,58 +322,27 @@ font-family: 'Work Sans', sans-serif;
 
 }
 
-.buttonOne{
-    position: relative;
-    left: 450px;
-    border: 1px solid green;
-	transform: skewX(-10deg);
-	height: 50px;
+.button{
+
+    /* border: 1px solid rgb(101, 101, 238); */
+	/* transform: skewX(-10deg); */
+	height: 30px;
 	width: 200px;
-	border-radius: 20px 5px 20px 0px;
-	position: relative;
+	/* border-radius: 20px 5px 20px 0px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: all .3s ease;
 	font: 15px sans-serif;
 	font-weight: 300;
 	text-shadow: 0 0 20px #fff;
 	text-transform: uppercase;
 	
 }
-.buttonTwo{
-  position: relative;
-  left: 850px;
-  bottom: 50px;
-  border: 1px solid green;
-	transform: skewX(-10deg);
-	height: 50px;
-	width: 200px;
-	border-radius: 20px 5px 20px 0px;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: all .3s ease;
-	font: 15px sans-serif;
-	font-weight: 300;
-	text-shadow: 0 0 20px #fff;
-	text-transform: uppercase; 
-	
-    
+
+ .button:hover{
+    background-color: #292e77; 
+    color: rgb(204, 193, 193);
  }
-
- .buttonOne:hover{
-    background-color: #4CAF50; 
-    color: white;
- }
-
-
- .buttonTwo:hover{
-    background-color: #4CAF50; 
-    color: white;
- }
-
 
  html {
     overflow-x: hidden;
@@ -366,3 +367,5 @@ font-family: 'Work Sans', sans-serif;
   font-family: 'Texturina', serif;
   margin-top: 10px;
 } */
+
+
