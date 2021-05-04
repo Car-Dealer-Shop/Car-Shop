@@ -232,45 +232,44 @@ main section button:hover {
 
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    /* margin-top: 90px; */
-    padding-left: 120px;
-    
-  }
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  padding-left: 120px;
+}
+  
   footer {
     background-color: #005082;
-    color: #FEA82F;
+    color: #fea82f;
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
-    position: relative;
-    bottom: -38px;
-  }
+}
   .social-icon {
     width: 100%;
     margin: 10px;
     /* padding: auto; */
-  }
+}
   .social-icon a {
-    color: #FEA82F;
+    color: #fea82f;
     display: inline-block;
     text-decoration: none;
     padding: 5px;
     align-items: center;
-  }
+}
   .terms {
     width: 100%;
     margin: 10px;
-  }
+}
   .terms a {
-    color: #FEA82F;
+    color: #fea82f;
     display: inline;
     text-decoration: none;
     padding: 5px;
-  }
-  
+}
 
 
   

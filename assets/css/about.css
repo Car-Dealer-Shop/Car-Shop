@@ -7,6 +7,7 @@
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -96,9 +97,11 @@ main {
 }
 
 .parallax-section {
-  background: url(../img/sam-moqadam-0_dtyvwWJhA-unsplash.jpg);
+  /* background: url(https://bookboon.com/blog/wp-content/uploads/sites/5/2019/03/teamwork-skills.jpeg); */
   /* Set a specific height */
-  min-height: 700px;
+
+  background: url(../img/teamwork-skills.png);
+  min-height: 800px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -219,39 +222,41 @@ main {
 }
 
 footer {
+  height: 150px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  /* margin-top: 90px; */
+  margin-bottom: -10px;
+  margin-left: -10px;
   padding-left: 120px;
 }
-
-footer {
-  background-color: #005082;
-  color: #fea82f;
-  align-items: center;
-  justify-content: center;
-  text-transform: capitalize;
+  
+  footer {
+    background-color: #005082;
+    color: #fea82f;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
 }
-.social-icon {
-  width: 100%;
-  margin: 10px;
-  /* padding: auto; */
+  .social-icon {
+    width: 100%;
+    margin: 10px;
+    /* padding: auto; */
 }
-.social-icon a {
-  color: #fea82f;
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px;
-  align-items: center;
+  .social-icon a {
+    color: #fea82f;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    align-items: center;
 }
-.terms {
-  width: 100%;
-  margin: 10px;
+  .terms {
+    width: 100%;
+    margin: 10px;
 }
-.terms a {
-  color: #fea82f;
-  display: inline;
-  text-decoration: none;
-  padding: 5px;
+  .terms a {
+    color: #fea82f;
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
 }
