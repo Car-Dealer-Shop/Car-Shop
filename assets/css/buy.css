@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 html {
     overflow-x: hidden;
 }
@@ -6,6 +6,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
+    font-family: 'Roboto', sans-serif;
     background-color:#e1e1e1;
     
 }
@@ -19,8 +20,8 @@ header {
   width: 100%;
   /* margin: 0 auto; */
   z-index: 11;
-  position: relative;
-    top: -10px;
+  /* position: relative;
+    top: -10px; */
 }
   header img {
     width: 300px;
@@ -68,6 +69,7 @@ header nav a:hover::after {
 /***************Main******************/
 main{
     margin: auto;
+    margin-bottom: 30px;
     
 }
 /* Style the buttons */
@@ -102,7 +104,7 @@ main #availableCar{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
    
 }
 .product {
@@ -166,9 +168,7 @@ main #availableCar{
     display: block;
     background: #325288;
    
-    transform: scaleX(1) scaleY(1) scaleZ(1) skewX(
--20deg
-);
+    transform: scaleX(1) scaleY(1) scaleZ(1) skewX(-20deg);
     
     transform-origin: 50% 50%;
     
@@ -191,15 +191,15 @@ main #availableCar{
 }
 
 
-main #backimg{
+/* main #backimg{
 position: relative;
 top: -15px;
 width: 50px;
 height: 50px;
 
-}
+} */
 
-main .call{
+/* main .call{
     position: relative;
     top: -35px;
     left:-10px
@@ -214,7 +214,7 @@ left: 120px;
 width: 30px;
 height: 30px;
 
-}
+} */
 
 /* slide animation */
 
@@ -322,11 +322,11 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-bottom: -10px;
-  margin-left: -10px;
+  /* margin-bottom: -10px; */
+  /* margin-left: -10px; */
   padding-left: 120px;
-  position: relative;
-  bottom: -20px;
+  /* position: relative; */
+  /* bottom: -20px; */
 }
 
 
