@@ -16,12 +16,14 @@ function carInformationSubmit(e){
 function addSelected(){
   let price = carForm.price.value;
   let manufacture = carForm.manu.value;
+  console.log(manufacture);
   let model = carForm.model.value;
   let modelYear = carForm.modelY.value;
   let mileAge = carForm.mile.value;
   let description = carForm.desc.value;
   let myImg = carForm.myImg.value;
   carss.addCar(manufacture, model, modelYear, mileAge,price, description, myImg);
+
 }
 // console.log(carForm);
 
