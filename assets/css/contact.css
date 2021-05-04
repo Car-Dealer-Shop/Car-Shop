@@ -20,7 +20,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
-  gap: 20px;
 }
 
 header {
@@ -74,27 +73,40 @@ header nav a:hover::after {
   background: #ffb037;
 }
 
-main {
+main{
+  background-image: url('https://wallpaperaccess.com/full/11207.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#main {
+  margin-top: -20px;
+  margin-bottom: -20px;
   background: #e1e1e1;
   display: grid;
   gap: 20px;
-  padding: 50px;
+  margin: 35px;
+  padding: 15px;
+  background-color: rgba(30,30,30,0.5);
+  border-radius: 10px;
 }
 
-main h2 {
+#main h2 {
   font-size: 32px;
   font-weight: 700;
 }
 
-main > section:nth-of-type(1) {
+#main > section:nth-of-type(1) {
   background: #fff;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   line-height: 2;
+  background: transparent;
 }
 
-main > section:nth-of-type(1) h3 {
+#main > section:nth-of-type(1) h3 {
   font-size: 22px;
   font-weight: 700;
   grid-column: span 3;
@@ -103,59 +115,62 @@ main > section:nth-of-type(1) h3 {
   padding-bottom: 10px;
 }
 
-main > section:nth-of-type(2) {
+#main > section:nth-of-type(2) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
 
-main > section:nth-of-type(2) article:nth-of-type(1) {
+#main > section:nth-of-type(2) article:nth-of-type(1) {
   grid-column: span 2;
 }
 
-main > section:nth-of-type(2) article:nth-of-type(1) form {
+#main > section:nth-of-type(2) article:nth-of-type(1) form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 10px;
+  background: transparent;
 }
 
-main > section:nth-of-type(2) article:nth-of-type(1) input {
+#main > section:nth-of-type(2) article:nth-of-type(1) input {
   height: 50px;
   padding-left: 10px;
   text-transform: capitalize;
   border: 1px solid #ccc;
+  background: transparent;
 }
 
-main > section:nth-of-type(2) article:nth-of-type(1) textarea {
+#main > section:nth-of-type(2) article:nth-of-type(1) textarea {
   grid-column: span 2;
   border: 1px solid #ccc;
   text-transform: capitalize;
   padding: 10px;
+  background: transparent;
 }
 
-main > section:nth-of-type(2) article:nth-of-type(1) button {
+#main > section:nth-of-type(2) article:nth-of-type(1) button {
   grid-column: 2 / 3;
   height: 40px;
   border: none;
-  background: #005082;
+  background: #441bf8;
   color: #fff;
   text-transform: uppercase;
   transition: all 500ms;
   cursor: pointer;
 }
 
-main > section:nth-of-type(2) article:nth-of-type(1) button:hover {
-  background: rgba(47,93,98,1);
+#main > section:nth-of-type(2) article:nth-of-type(1) button:hover {
+  background: rgb(79, 91, 255);
   color: #fff;
 }
 
-main > section:nth-of-type(2) article:nth-of-type(2) {
+#main > section:nth-of-type(2) article:nth-of-type(2) {
   overflow: hidden;
   grid-column: span 1;
   object-fit: cover;
 }
 
-main > section:nth-of-type(2) article:nth-of-type(2) {
+#main > section:nth-of-type(2) article:nth-of-type(2) {
   object-fit: cover;
 
 }
@@ -175,39 +190,41 @@ main > section:nth-of-type(2) article:nth-of-type(2) {
 }
 
 footer {
+  height: 150px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  /* margin-top: 90px; */
+  margin-bottom: -10px;
+  margin-left: -10px;
   padding-left: 120px;
 }
-
-footer {
-  background-color: #005082;
-  color: #fea82f;
-  align-items: center;
-  justify-content: center;
-  text-transform: capitalize;
+  
+  footer {
+    background-color: #005082;
+    color: #fea82f;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
 }
-.social-icon {
-  width: 100%;
-  margin: 10px;
-  /* padding: auto; */
+  .social-icon {
+    width: 100%;
+    margin: 10px;
+    /* padding: auto; */
 }
-.social-icon a {
-  color: #fea82f;
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px;
-  align-items: center;
+  .social-icon a {
+    color: #fea82f;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    align-items: center;
 }
-.terms {
-  width: 100%;
-  margin: 10px;
+  .terms {
+    width: 100%;
+    margin: 10px;
 }
-.terms a {
-  color: #fea82f;
-  display: inline;
-  text-decoration: none;
-  padding: 5px;
+  .terms a {
+    color: #fea82f;
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
 }

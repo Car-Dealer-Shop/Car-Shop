@@ -30,27 +30,22 @@ header {
     position: relative;
     left: -10px;
 }
-
 header nav {
   margin-right: 40px;
   text-align: right;
 }
-
-
 header nav a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #f4eee8;
+  color: #F4EEE8;
   padding: 10px 20px;
   transition: all 550ms;
 }
-
 header nav a:hover {
   background: #fff;
-  color: #2f5d62;
+  color: #2F5D62;
   position: relative;
 }
-
 header nav a:hover::after {
   content: '';
   width: 100%;
@@ -59,6 +54,7 @@ header nav a:hover::after {
   bottom: 0;
   position: absolute;
   background: #ffb037;
+
 }
 
 main {
@@ -107,6 +103,7 @@ main {
   margin: 10px 80px 10px 270px;
 }
 #main .carForm {
+
  display: grid;
  grid-template-rows: 1fr;
  /* background-image: url('https://cdn.wallpapersafari.com/58/52/OwUGre.jpg');
@@ -114,6 +111,7 @@ main {
  background-size: contain; */
 }
 .carForm label{
+
 
   color: #51c4d3;
   margin: 5px 10px 5px 0;
@@ -154,6 +152,7 @@ main {
   transition: 300ms;
 }
 
+
 .desc {
   width: 50%;
   height: 80%;
@@ -167,39 +166,43 @@ main {
   text-align: center;
   }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding-left: 120px;
-  background-color: #005082;
-  color: #FEA82F;
-  align-items: center;
-  justify-content: center;
-  text-transform: capitalize;
-}
+  footer {
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    padding-left: 120px;
+  }
+    
+    footer {
+      background-color: #005082;
+      color: #fea82f;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+  }
+    .social-icon {
+      width: 100%;
+      margin: 10px;
+      /* padding: auto; */
+  }
+    .social-icon a {
+      color: #fea82f;
+      display: inline-block;
+      text-decoration: none;
+      padding: 5px;
+      align-items: center;
+  }
+    .terms {
+      width: 100%;
+      margin: 10px;
+  }
+    .terms a {
+      color: #fea82f;
+      display: inline;
+      text-decoration: none;
+      padding: 5px;
+  }
 
-.social-icon {
-  width: 100%;
-  margin: 10px;
-  /* padding: auto; */
-}
-.social-icon a {
-  color: #FEA82F;
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px;
-  align-items: center;
-}
-.terms {
-  width: 100%;
-  margin: 10px;
-}
-.terms a {
-  color: #FEA82F;
-  display: inline;
-  text-decoration: none;
-  padding: 5px;
-}
-
-/* rgb(225,212,15) */
