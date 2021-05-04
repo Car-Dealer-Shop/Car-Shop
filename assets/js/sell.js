@@ -9,7 +9,8 @@ function carInformationSubmit(e){
   e.preventDefault();
 
   addSelected();
-  carss.saveToLocalStorage();
+  carss.saveToLocalStorageBuyCar();
+  carss.saveToLocalStorageRentCar();
 }
 
 function addSelected(){
