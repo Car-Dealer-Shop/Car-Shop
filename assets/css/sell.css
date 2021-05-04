@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 html { 
   overflow-x: hidden;
 }
@@ -8,6 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   width: 100%;
 }
+
 header {
   background: #142850;
   grid-row: 1 / 2;
@@ -51,41 +53,57 @@ header nav a:hover::after {
   left: 0;
   bottom: 0;
   position: absolute;
-  background: #FFB037;
+  background: #ffb037;
+
 }
+
 main {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  padding: 50px;
+
   background-image: url('https://wallpaperaccess.com/full/11207.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+
 }
-main section:nth-child(1) {
+
+#main {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin: 50px;
+
+  background-color: rgba(30, 30, 30, 0.5);
+  border-radius: 10px;
+
+  /* background-image: url('https://wallpaperaccess.com/full/11207.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+#main section:nth-child(1) {
   width: 100%;
   margin: 10px 80px 10px 120px;
 }
-main h2{
-  color: #687980; 
+#main h2{
+  color: #126e82; 
   font-family: 'Trocchi', serif; 
   font-size: 45px; 
   font-weight: normal; 
   line-height: 48px; 
   margin-bottom: 10px;
 }
-main h3 {
-  color: #7C795D; 
+#main h3 {
+  color: rgb(225,212,15); 
   font-family: 'Source Sans Pro', sans-serif; 
   font-size: 28px; 
   font-weight: 300; 
   line-height: 32px; 
   margin: 0 20px 24px;
 }
-main section:nth-child(2) {
+#main section:nth-child(2) {
   width: 100%;
   margin: 10px 80px 10px 270px;
 }
-main .carForm {
+#main .carForm {
+
  display: grid;
  grid-template-rows: 1fr;
  /* background-image: url('https://cdn.wallpapersafari.com/58/52/OwUGre.jpg');
@@ -93,13 +111,16 @@ main .carForm {
  background-size: contain; */
 }
 .carForm label{
-  color: #03506F;
+
+
+  color: #51c4d3;
   margin: 5px 10px 5px 0;
   padding: 5px 0;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
 }
+
 .carForm input, select {
   font-family: inherit;
   width: 50%;
@@ -119,21 +140,19 @@ main .carForm {
   color: #eee;
   font-size: 15px;
 }
+
 .submit {
   width: 50%;
   margin-top: 10px;
   padding: 10px;
-  background-color: #441bf8;
+  background-color: #126e82;
   color: cornsilk;
   text-transform: uppercase;
   cursor: pointer;
-  transition-duration: 0.4s;
+  transition: 300ms;
 }
 
-.submit:hover {
-  background: rgb(79, 91, 255);
-  color: #fff;
-}
+
 .desc {
   width: 50%;
   height: 80%;
@@ -146,6 +165,7 @@ main .carForm {
   color: #eee;
   text-align: center;
   }
+
   footer {
     height: 150px;
     display: grid;
@@ -185,3 +205,4 @@ main .carForm {
       text-decoration: none;
       padding: 5px;
   }
+
