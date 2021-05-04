@@ -71,8 +71,7 @@ function removeItemFromCar(event) {
     // Remove that item from the cart, based on the ID we set when we created the button.
     car.removeItem(parseInt(event.target.id));
     // Save the cart back to local storage.
-    car.saveToLocalStorageRentCar();
-    // Redraw the cart.
+    car.saveToLocalStorageRentCarre();
     // renderCart();
     location.reload();
 

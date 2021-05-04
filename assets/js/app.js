@@ -12,10 +12,39 @@ Car.prototype.addCar = function(manufacture, model, modelYear, mileAge, price, d
 
 // To save Data in locall storage buy car
 Car.prototype.saveToLocalStorageBuyCar = function(){
-  localStorage.setItem('car', JSON.stringify(this.cars));
+  let carLoc = JSON.parse(localStorage.getItem('car'));
+  console.log('rrr', carLoc);
+  console.log(this.cars);
+  if (carLoc) {
+
+    carLoc.push(this.cars[this.cars.length-1]);
+
+    localStorage.setItem('car', JSON.stringify(carLoc));
+    console.log(carLoc);
+  } else {
+    localStorage.setItem('car', JSON.stringify(this.cars));
+  }
+  // localStorage.setItem('car', JSON.stringify(this.cars));
 };
 
 Car.prototype.saveToLocalStorageRentCar = function(){
+  let carLoc = JSON.parse(localStorage.getItem('rent'));
+  console.log('rrr', carLoc);
+  console.log(this.cars);
+  if (carLoc) {
+
+    carLoc.push(this.cars[this.cars.length-1]);
+
+    localStorage.setItem('rent', JSON.stringify(carLoc));
+    console.log(carLoc);
+  } else {
+    localStorage.setItem('rent', JSON.stringify(this.cars));
+  }
+  // localStorage.setItem('rent', JSON.stringify(this.cars));
+};
+
+Car.prototype.saveToLocalStorageRentCarre = function(){
+
   localStorage.setItem('rent', JSON.stringify(this.cars));
 };
 

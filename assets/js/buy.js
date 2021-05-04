@@ -4,7 +4,7 @@ let car;
 let imgCar;
 
 function loadCar(){
-  const carItems = JSON.parse(localStorage.getItem('car'));
+  let carItems = JSON.parse(localStorage.getItem('car'));
   car = new Car(carItems);
 }
 

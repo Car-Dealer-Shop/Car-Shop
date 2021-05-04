@@ -11,6 +11,7 @@ function carInformationSubmit(e){
   addSelected();
   carss.saveToLocalStorageBuyCar();
   carss.saveToLocalStorageRentCar();
+  // window.location.href = './buy-car.html';
 }
 
 function addSelected(){
