@@ -331,22 +331,20 @@ border-radius: 20px;
   height: 50px;
   width: 200px;
   border: none;
-  background: transparent;
-  color: #56776c;
+  background: #441bf8;
+  color: #fff;
   text-transform: uppercase;
   transition: all 500ms;
   cursor: pointer;
-  margin-left: 100px;
-  border: 2px solid #56776c;
+  margin-right: 400px;
 	
 }
 
  .button1:hover{
-  /* background: rgb(79, 91, 255);
-  color: #fff; */
-  background-color: #008CBA;
-  color: white;
+  background: rgb(79, 91, 255);
+  color: #fff;
  }
+
  
  .button2{
 
@@ -435,7 +433,7 @@ border-radius: 20px;
 }
 
 footer {
-  height: 150px;
+  height: 120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;

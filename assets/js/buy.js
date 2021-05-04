@@ -70,11 +70,12 @@ function showCar(){
 
     let yearCar = document.createElement('p');
     flipCardBack.appendChild(yearCar);
-    yearCar.textContent = car.cars[i].modelY; // model year
+    yearCar.textContent = 'Model year : ' + car.cars[i].modelYear; // model year
+
 
     let mileCar = document.createElement('p');
     flipCardBack.appendChild(mileCar);
-    mileCar.textContent =car.cars[i].mileAge; // mile car
+    mileCar.textContent ='Mileage : ' + car.cars[i].mileAge; // mile car
 
     let discCar = document.createElement('p');
     flipCardBack.appendChild(discCar);
