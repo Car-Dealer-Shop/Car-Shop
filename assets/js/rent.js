@@ -2,7 +2,7 @@ const sectionE = document.getElementById('availableRentCar');
 let car;
 
 function loadCar(){
-  const carItems = JSON.parse(localStorage.getItem('rent')) || [];
+  const carItems = JSON.parse(localStorage.getItem('rent'));
   car = new Car(carItems);
 }
 
@@ -65,7 +65,7 @@ function showCar(){
   }
 }
 
-function removeItemFromCart(event) {
+function removeItemFromCar(event) {
   // Only do anything interesting if the clicked item was a delete button.
   if (event.target.classList.contains('remover')) {
     // Remove that item from the cart, based on the ID we set when we created the button.
@@ -79,6 +79,6 @@ function removeItemFromCart(event) {
   }
 }
 
-sectionE.addEventListener('click', removeItemFromCart);
+sectionE.addEventListener('click', removeItemFromCar);
 renderWeb();
 
