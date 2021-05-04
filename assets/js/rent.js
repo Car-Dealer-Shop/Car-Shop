@@ -42,19 +42,27 @@ function showCar(){
     cardRentInner.appendChild(nameCar);
     nameCar.textContent = car.cars[i].manufacture; //manufactrunig
 
-    let modelCar = document.createElement('p');
-    cardRentInner.appendChild(modelCar);
-    modelCar.textContent = `Model ${car.cars[i].model} / Model Year ${car.cars[i].modelY}`; // model and model year
+    let modelCarName = document.createElement('p');
+    cardRentInner.appendChild(modelCarName);
+    modelCarName.textContent = `Model : ${car.cars[i].model}`; // model and model year
 
-    let mileAndDesCar = document.createElement('p');
-    cardRentInner.appendChild(mileAndDesCar);
-    mileAndDesCar.textContent =`Mile ${car.cars[i].mileAge} / Description ${car.cars[i].description}`; // mile and Description car
-    car.cars[i].mileAge; // mile car
+    let modelCarNumber = document.createElement('p');
+    cardRentInner.appendChild(modelCarNumber);
+    modelCarNumber.textContent = `Model Year : ${car.cars[i].modelYear}`;
+
+    let mileCar = document.createElement('p');
+    cardRentInner.appendChild(mileCar);
+    mileCar.textContent =`Mileage : ${car.cars[i].mileAge}`; // mile car
+
+    let DesCar = document.createElement('p');
+    cardRentInner.appendChild(DesCar);
+    DesCar.textContent =`Description : ${car.cars[i].description}`; // Description car
+    car.cars[i].mileAge;
 
     let priceSpan = document.createElement('span');
     cardRentInner.setAttribute('class', 'titlenum');
     cardRentInner.appendChild(priceSpan);
-    priceSpan.textContent = car.cars[i].price;
+    // priceSpan.textContent = car.cars[i].price;
 
     let rentNow = document.createElement('button');
     rentNow.textContent = 'Rent Now'; // button

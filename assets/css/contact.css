@@ -93,8 +93,12 @@ main{
 }
 
 #main h2 {
-  font-size: 32px;
-  font-weight: 700;
+  color: #126e82;
+  font-family: 'Trocchi', serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin-bottom: -25px;
 }
 
 #main > section:nth-of-type(1) {
@@ -107,8 +111,11 @@ main{
 }
 
 #main > section:nth-of-type(1) h3 {
-  font-size: 22px;
-  font-weight: 700;
+  color: rgb(225,212,15);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 32px;
   grid-column: span 3;
   border-bottom: 1px solid rgba(225,225,225,.5);
   margin-bottom: 10px;
@@ -138,6 +145,9 @@ main{
   text-transform: capitalize;
   border: 1px solid #ccc;
   background: transparent;
+  font-family: inherit;
+  font-size: 1.3rem;
+  color: #eee;
 }
 
 #main > section:nth-of-type(2) article:nth-of-type(1) textarea {
@@ -148,20 +158,28 @@ main{
   background: transparent;
 }
 
+::placeholder{
+  color: #eee;
+  font-size: 15px;
+}
+
 #main > section:nth-of-type(2) article:nth-of-type(1) button {
   grid-column: 2 / 3;
   height: 40px;
   border: none;
-  background: #441bf8;
+  background: transparent;
   color: #fff;
   text-transform: uppercase;
   transition: all 500ms;
   cursor: pointer;
+  border: 2px solid #008CBA;
 }
 
 #main > section:nth-of-type(2) article:nth-of-type(1) button:hover {
-  background: rgb(79, 91, 255);
-  color: #fff;
+  /* background: rgb(79, 91, 255);
+  color: #fff; */
+  background-color: #008CBA;
+  color: white;
 }
 
 #main > section:nth-of-type(2) article:nth-of-type(2) {
@@ -174,6 +192,19 @@ main{
   object-fit: cover;
 
 }
+
+main article p {
+
+  font-family: inherit;
+    width: 50%;
+    border: 0;
+    border-bottom: 2px solid #eee;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #eee;
+}
+
+
 
 .mapouter {
   position: relative;

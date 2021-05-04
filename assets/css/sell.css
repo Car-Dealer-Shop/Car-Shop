@@ -145,11 +145,18 @@ main {
   width: 50%;
   margin-top: 10px;
   padding: 10px;
-  background-color: #126e82;
-  color: cornsilk;
+  background: transparent;
+  color: #eee;
   text-transform: uppercase;
   cursor: pointer;
   transition: 300ms;
+  border: 2px solid #008CBA;
+}
+
+.submit:hover{
+
+  background-color: #008CBA;
+  color: white;
 }
 
 

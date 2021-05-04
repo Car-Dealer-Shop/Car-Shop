@@ -53,7 +53,7 @@ function showCar(){
     let priceSpan = document.createElement('span');
     priceSpan.setAttribute('class', 'titlenum');
     flipCardFront.appendChild(priceSpan);
-    priceSpan.textContent = car.cars[i].price;
+    priceSpan.textContent = car.cars[i].price + ' JD';
 
     //Create the flip card back div
     let flipCardBack = document.createElement('div');

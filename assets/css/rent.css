@@ -6,18 +6,12 @@ html {
 body {
     width: 100%;
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
     font-family: 'Roboto', sans-serif;
     background-color: #eeeeee
     
 }
-/* .card{
-    display: grid;
-   
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-left: 30px;
-} */
+
 header {
     background: #142850;
     grid-row: 1 / 2;
@@ -75,29 +69,28 @@ main{
     margin-top: 30px;
 }
 
-/* main section input{
-
-    margin: 15px;
-} */
 main .available-rent-car{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-top: 50px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    
 
+}
+
+.car-rent{
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 main .car-rent img{
     width: 300px;
     height: 300px;
+    
 }
-main .available-rent-car {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /* max-width: 300px; */
-    margin: auto;
-    text-align: center;
-    font-family: arial;
 
- }
+
 
 main .available-rent-car button {
     border: none;
@@ -112,17 +105,29 @@ main .available-rent-car button {
 
 }
 
+main section .card img {
 
+    width: 300px;
+    height: 300px;
+    
+    
+}
 
+main section button{
+    width: 3%;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
 
+main section button:hover {
+    opacity: 0.7;
+    
+}
 
-
-
-
-
-  
 /*******************Footer*****************************/
-
 
 footer {
   height: 150px;
@@ -144,7 +149,6 @@ footer {
   .social-icon {
     width: 100%;
     margin: 10px;
-    /* padding: auto; */
 }
   .social-icon a {
     color: #fea82f;
