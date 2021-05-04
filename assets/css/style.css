@@ -331,18 +331,21 @@ border-radius: 20px;
   height: 50px;
   width: 200px;
   border: none;
-  background: #441bf8;
-  color: #fff;
+  background: transparent;
+  color: #56776c;
   text-transform: uppercase;
   transition: all 500ms;
   cursor: pointer;
   margin-left: 100px;
+  border: 2px solid #56776c;
 	
 }
 
  .button1:hover{
-  background: rgb(79, 91, 255);
-  color: #fff;
+  /* background: rgb(79, 91, 255);
+  color: #fff; */
+  background-color: #008CBA;
+  color: white;
  }
  
  .button2{
@@ -476,23 +479,23 @@ footer {
   padding: 20px 170px;
 } 
 .description .copyR{
-margin-left: 700px;
+margin-left: 46%;
 }
 .description .dataP{
-margin-left: 665px;
+margin-left: 44%;
 }
 .terms-condition{
-margin-left: 640px;
+margin-left: 42%;
 }
 .dataCooki{
-margin-left: 580px;
+margin-left: 37%;
 }
 .description .log{
-margin-left: 710px;
+margin-left: 47%;
 }
 .description .deviceData{
-margin-left: 700px;
+margin-left: 46%;
 }
 .description .personalData{
-margin-left: 695px;
+margin-left: 46%;
 }

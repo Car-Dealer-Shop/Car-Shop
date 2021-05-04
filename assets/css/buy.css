@@ -157,6 +157,16 @@ main #availableCar{
     transform: rotateY(180deg);
   }
 
+  .flip-card-back p {
+
+    margin-top: 10%;
+  }
+
+
+  .flip-card-back h1{
+    margin-top: 10%;
+  }
+
 
 .flip-card-front .title{
     position: absolute;
